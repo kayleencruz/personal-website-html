@@ -51,17 +51,17 @@
 
 <body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36">
     <!-- Navbar -->
-    <div class="bg-pinkForBg fixed w-full top-0 z-10">
-        <nav class="flex justify-between items-center px-8 py-8 mx-6">
-            <!-- <h1 class="text-xl">Kayleen Cruz</h1> -->
-            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
-            <div class="flex space-x-6">
-            <a href="#about" class="hover:text-gray-400">About</a>
-            <a href="#skills" class="hover:text-gray-400">Skills</a>
-            <a href="#projects" class="hover:text-gray-400">Projects</a>
-            </div>
-        </nav>
-    </div>
+
+    <nav id="sideNav" class="hidden lg:block fixed top-1/2 transform -translate-y-1/2 z-10 py-4 px-8 uppercase space-y-4 text-md tracking-wide">
+        <a href="index.html" data-target="index" class="block nav-link text-gray-400 hover:text-pinkBrown pb-4">← Home</a>
+        <a href="#home" data-target="home" class="block nav-link text-gray-400 hover:text-pinkBrown">Overview</a>
+        <a href="#about" data-target="about" class="block nav-link text-gray-400 hover:text-pinkBrown">About</a>
+        <a href="#user-research" data-target="user-research" class="block nav-link text-gray-400 hover:text-pinkBrown">User Research</a>
+        <a href="#personas" data-target="personas" class="block nav-link text-gray-400 hover:text-pinkBrown">Personas</a>
+        <a href="#storyboard" data-target="storyboard" class="block nav-link text-gray-400 hover:text-pinkBrown">Storyboard</a>
+        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-400 hover:text-pinkBrown">Takeaways</a>
+    </nav>
+
 
 
     <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-40">
@@ -103,8 +103,8 @@
         </div>
     </section>
 
-    <section id="Overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
-        <h1 class="text-3xl pb-8 text-center font-semibold">Overview:</h1>
+    <section id="overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Overview</h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
             My goal this week was to understand the user journey and illustrate their needs.
             I did this by making real-life observations and then conduct interviews to 
@@ -116,7 +116,7 @@
 
 
 
-    <section id="How do printers at Brown look like?" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+    <section id="about" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
 
         <h1 class="text-3xl pb-8 text-center font-semibold"> How do Printers at Brown look like? </h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
@@ -150,7 +150,7 @@
       </section>
 
      <!-- {/* Interview Questions + summary*/} -->
-      <section id="Interview questions and results" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+      <section id="user-research" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
 
         <h1 class="text-3xl pb-8 text-center font-semibold"> User Research </h1>
     
@@ -322,7 +322,7 @@
         </section>
 
         <!-- {/* Interview Questions + summary*/} -->
-        <section id="Personas" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <section id="personas" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
 
         <h1 class="text-3xl pb-8 text-center font-semibold"> Personas </h1>
 
@@ -372,17 +372,59 @@
         </section>
 
         <!-- {/* Interview Questions + summary*/} -->
-        <section id="Storyboard" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
-
-        <h1 class="text-3xl pb-8 text-center font-semibold"> Storyboard </h1>
-
-        <p class="text-lg pb-12 text-justify"> 
-            To further illustrate the needs of the users, I created a storyboard 
-            for one of the personas I created: Raven. The storyboard is meant to 
-            show Raven's user story from start to end emphasizing her goal.
-        </p>
-
-        <img src="./assets/raven-storyboard.png" alt="raven storyboard" width="800" height="800" class="object-cover" />
-
+        <section id="storyboard" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+            <h1 class="text-3xl pb-8 text-center font-semibold"> Storyboard </h1>
+            <p class="text-lg pb-12 text-justify"> 
+                To further illustrate the needs of the users, I created a storyboard 
+                for one of the personas I created: Raven. The storyboard is meant to 
+                show Raven's user story from start to end emphasizing her goal.
+            </p>
+            <img src="./assets/raven-storyboard.png" alt="raven storyboard" width="800" height="800" class="object-cover" />
         </section>
+
+
+
+        <section id="takeaways" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+            <h1 class="text-3xl pb-8 text-center font-semibold">Takeaways</h1>
+            <p class="text-lg text-darkBrown pb-48 text-left"> 
+                My goal this week was to understand the user journey and illustrate their needs.
+                I did this by making real-life observations and then conduct interviews to 
+                understand how a user interacts with a product. My interface of choice
+                were the printers at Brown. I oberserved how people interacted with them at the 
+                library and conducted 3 interviews. 
+            </p>
+        </section>
+
+
+
+
+
+
+        <script>
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+          
+            window.addEventListener("scroll", () => {
+              let current = "";
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                  current = section.getAttribute("id");
+                }
+              });
+          
+              navLinks.forEach((link) => {
+                link.classList.remove("text-lighterBrown", "font-semibold");
+                link.classList.add("text-gray-400"); // restore gray for non-active
+          
+                if (link.dataset.target === current) {
+                  link.classList.remove("text-gray-400");
+                  link.classList.add("text-lighterBrown", "font-semibold");
+                }
+              });
+            });
+          </script>
+
+
 </body>

@@ -52,17 +52,17 @@
 <body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36">
 
 
-    <!-- <div class="bg-pinkForBg fixed w-full top-0 z-10">
-        <nav class="flex justify-between items-center px-8 py-8 mx-6">
-            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
-            <div class="flex space-x-6">
-            <a href="#about" class="hover:text-gray-400">About</a>
-            <a href="#skills" class="hover:text-gray-400">Skills</a>
-            <a href="#projects" class="hover:text-gray-400">Projects</a>
-            </div>
-        </nav>
-    </div> -->
-
+    <nav id="sideNav" class="hidden lg:block fixed top-1/2 transform -translate-y-1/2 z-10 py-4 px-8 uppercase space-y-4 text-md tracking-wide">
+        <a href="index.html" data-target="index" class="block nav-link text-gray-400 hover:text-pinkBrown pb-4">← Home</a>
+        <a href="#home" data-target="home" class="block nav-link text-gray-400 hover:text-pinkBrown">Overview</a>
+        <a href="#about" data-target="about" class="block nav-link text-gray-400 hover:text-pinkBrown">About</a>
+        <a href="#problems" data-target="problems" class="block nav-link text-gray-400 hover:text-pinkBrown">Problems</a>
+        <a href="#redesign" data-target="redesign" class="block nav-link text-gray-400 hover:text-pinkBrown">Redesign</a>
+        <a href="#coding" data-target="coding" class="block nav-link text-gray-400 hover:text-pinkBrown">Coding</a>
+        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-400 hover:text-pinkBrown">Takeaways</a>
+      </nav>
+      
+    
 
     <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-24">
         <h1 class="text-5xl md:text-7xl text-center mb-8">Responsive Redesign</h1>
@@ -105,8 +105,8 @@
     </section>
       
 
-    <section id="Overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
-        <h1 class="text-3xl pb-8 text-center font-semibold">Overview:</h1>
+    <section id="overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Overview</h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
             My goal this week was to redesign my middle school's web page as I felt 
             its interface was not serving the users. I first analyzed and identified
@@ -117,8 +117,7 @@
         </p>
     </section>
 
-
-    <section id="About Website Chosen" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown">
+    <section id="about" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown">
         <h1 class="text-3xl pb-4 text-center font-semibold"> About the website chosen </h1>
     </section>
 
@@ -126,7 +125,7 @@
         <img src="./assets/old-gms.png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
     </div>
 
-    <section id="About Website Chosen" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg">
+    <div class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg">
         <div class="flex flex-col items-start space-y-4">
             <div>
                 <p class="uppercase font-medium text-lighterBrown tracking-wide">Original Website</p>
@@ -151,30 +150,17 @@
                     <li> Prospective students & parents </li>
                 </ul>
             </div>
-
-
-<!-- 
-            <p class="pb-4"> <span class="text-xl">Original Website:</span> <a href="https://www.gagems.net/" class="text-lg hover:underline">https://www.gagems.net/</a> </p> -->
-            <!-- <p class="pb-4"> <span class="text-xl">Purpose</span>: The homepage displays photos of the school,
-            annoucements and highlights, upcoming events, quick links, and what appears to be resources. </p>
-            <h2 class="pb-2 text-xl">The website serves:</h2>
-            <ul class="list-[upper-roman] list-inside pb-4 max-w-2xl text-justify"> 
-                <li> Students </li>
-                <li> Parents/Guardians</li>
-                <li> Teachers </li>
-                <li> Prospective students & parents </li>
-            </ul> -->
         </div>
-    </section>
+    </div>
 
 
-    <section id="Finding Problems" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
+    <section id="problems" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
         <h1 class="text-3xl pb-8 text-center text-darkBrown font-semibold"> Finding Problems </h1>
         <div class="flex flex-col items-start">
             <p class="text-2xl pb-6">Usability Problems</p>
 
             <ul class="list-[upper-roman] list-inside pb-4 max-w-2xl text-justify"> 
-                <li class="pb-10 text-xl text-bold">
+                <li class="pb-6 text-lg text-bold">
                     Poor Organization 
                     <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
                         <li>
@@ -192,7 +178,7 @@
                     </ul>
                 </li>
 
-                <li class="pb-10 text-xl text-bold" >
+                <li class="pb-6 text-lg text-bold" >
                     Weak Text Hierarchy & Readability Issues
                     <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
                         <li>
@@ -209,7 +195,7 @@
                 </li>
 
 
-                <li class="pb-10 text-xl text-bold">
+                <li class="pb-6 text-lg text-bold">
                     Unclear interactive elements 
                     <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
                         <li>
@@ -235,7 +221,7 @@
         </div>
     </section>
 
-    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
+    <section id="redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
         <h1 class="text-3xl pb-8 text-center text-darkBrown font-semibold">Visual Redesign</h1>
         <p class="text-lg pb-8 text-left"> 
             Next, I created a visual design style guide and mockups for a laptop,
@@ -248,7 +234,7 @@
         <img src="./assets/visual-style-guide.png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
     </div>
 
-    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+    <div class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
         <p class="text-lg pb-8 text-left"> 
             Visually, my goal was to make the website easier to read/skim through. 
             I did this by having clear typography to identify section titles and subheadings vs 
@@ -256,10 +242,10 @@
             I also added hover states to all the links & buttons making it clear that they
             are navigable. 
         </p>
-    </section>
+    </div>
 
     <section id="Mockup" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
-        <h2 class="text-2xl pb-8">Mockups</h2>
+        <h2 class="text-2xl pb-6">Mockups</h2>
         <p class="text-lg pb-8 text-left"> 
             Using Figma, I designed an responsive interface that works for all screen sizes.
         </p>
@@ -374,18 +360,15 @@
         </p>
     </section>
 
-    <section id="Creating the page" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+    <section id="coding" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
 
-        <h1 class=" text-3xl pb-6 text-center text-darkBrown font-semibold">Creating the web page</h1>
+        <h1 class=" text-3xl pb-8 text-center text-darkBrown font-semibold">Creating the web page</h1>
         <div class="pb-8">
             <p class="uppercase font-medium text-lighterBrown tracking-wide">Redesigned Website</p>
             <a href="https://kayleencruz.github.io/web-redesign/" class="text-lg hover:underline">https://kayleencruz.github.io/web-redesign/</a>
         </div>
 
 
-
-<!-- 
-        <p class="pb-4"> <span class="text-xl">Redesigned website:</span> <a href="https://kayleencruz.github.io/web-redesign/" class="text-lg hover:underline">https://kayleencruz.github.io/web-redesign/</a> </p> -->
         <p class="text-lg pb-8 text-left"> 
             To create a responsive web page, I utilized HTML and TailwindCSS.
             As for design, I stayed accurate to the mockups and visual style guide. This design
@@ -395,8 +378,51 @@
             text sizes that are responsive and readable for all screen sizes.
         </p>
 
-        <p class="text-lg pb-8 text-center"> 
+        <p class="text-lg text-center"> 
             Feel free to explore the website on your own! :D
         </p>
     </section>
+
+
+    <section id="takeaways" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Takeaways</h1>
+        <p class="text-lg text-darkBrown pb-48 text-left"> 
+            I learned how to build with accessibility-first principles, 
+            ensuring that core components are usable across a wide range of 
+            devices and input methods. I also gained experience implementing 
+            responsive layouts using media queries and JavaScript to dynamically 
+            collapse and manage navigation elements—skills essential to frontend 
+            engineering.
+
+        </p>
+    </section>
+
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+      
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              current = section.getAttribute("id");
+            }
+          });
+      
+          navLinks.forEach((link) => {
+            link.classList.remove("text-lighterBrown", "font-semibold");
+            link.classList.add("text-gray-400"); // restore gray for non-active
+      
+            if (link.dataset.target === current) {
+              link.classList.remove("text-gray-400");
+              link.classList.add("text-lighterBrown", "font-semibold");
+            }
+          });
+        });
+      </script>
+      
+
 </body>

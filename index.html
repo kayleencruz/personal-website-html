@@ -72,7 +72,7 @@
     <section id="about" class="flex flex-col md:flex-row items-center justify-center px-8 pt-64 pb-20">
       <div class="md:pr-24 space-y-6">
 
-        <h2 class="text-8xl font-semibold">
+        <h2 class="text-7xl sm:text-8xl font-semibold">
           Hi, I am <span class="text-pink-600">Kayleen.</span>
         </h2>
         <p class="max-w-2xl text-xl">
@@ -84,10 +84,10 @@
           <button class="px-6 py-3 bg-white rounded-3xl drop-shadow-lg font-semibold hover:bg-pinkBrown ">
             My Resume
           </button>
-          <div class="flex space-x-4 mt-8 text-3xl">
-            <a href="#"><i class="fab fa-linkedin text-blue-600 hover:text-blue-700"></i></a>
-            <a href="#"><i class="fab fa-github text-black hover:text-gray-600"></i></a>
-            <a href="#"><i class="fas fa-envelope text-red-500 hover:text-red-600"></i></a>
+          <div class="flex space-x-4 mt-8 text-4xl">
+            <a href="#"><i class="fab fa-linkedin text-blue-600 hover:text-blue-900"></i></a>
+            <a href="#"><i class="fab fa-github text-black hover:text-gray-500"></i></a>
+            <a href="#"><i class="fas fa-envelope text-red-500 hover:text-red-900"></i></a>
           </div>
         </div>
       </div>
@@ -107,57 +107,68 @@
       
           <!-- Skill Icons Grid -->
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 justify-items-center">
-            <div class="relative flex flex-col items-center space-y-4">
-                <!-- Semicircle Base -->
+
+            <div class="relative flex flex-col items-center space-y-2 group">
                 <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                  <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                  <img src="./assets/python-logo.png" alt="Python" title="Python"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                 </div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
+            </div>
               
-                <!-- Soft Shadow/Blur Underneath -->
-                <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+              
+            <div class="relative flex flex-col items-center space-y-2 group">
+                <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
+                  <img src="./assets/java-logo.png" alt="Java" title="Java"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
+                </div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
             </div>
 
 
-            <div class="relative flex flex-col items-center space-y-4">
-                <!-- Semicircle Base -->
+            <div class="relative flex flex-col items-center space-y-2 group">
                 <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                  <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                  <img src="./assets/c-logo.webp" alt="C logo" title="C"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                 </div>
-              
-                <!-- Soft Shadow/Blur Underneath -->
-                <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px] "></div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
             </div>
 
 
-            <div class="relative flex flex-col items-center space-y-4">
-                <!-- Semicircle Base -->
+            <div class="relative flex flex-col items-center space-y-2 group">
                 <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                  <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                  <img src="./assets/javascript-logo.webp" alt="Javascript" title="Javascript"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                 </div>
-              
-                <!-- Soft Shadow/Blur Underneath -->
-                <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
             </div>
 
-            <div class="relative flex flex-col items-center space-y-4">
-                <!-- Semicircle Base -->
+            <div class="relative flex flex-col items-center space-y-2 group">
                 <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                  <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                  <img src="./assets/css-logo.png" alt="CSS" title="CSS"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                 </div>
-              
-                <!-- Soft Shadow/Blur Underneath -->
-                <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
             </div>
 
-            <div class="relative flex flex-col items-center space-y-4">
-                <!-- Semicircle Base -->
+
+            <div class="relative flex flex-col items-center space-y-2 group">
                 <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                  <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                  <img src="./assets/html-logo.png" alt="HTML" title="HTML"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                 </div>
-              
-                <!-- Soft Shadow/Blur Underneath -->
-                <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
             </div>
+
+
+            <div class="relative flex flex-col items-center space-y-2 group">
+                <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
+                  <img src="./assets/sql-logo.png" alt="SQL" title="SQL"
+                       class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
+                </div>
+                <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
+            </div>
+
           </div>
         </div>
 
@@ -168,56 +179,46 @@
         
             <!-- Skill Icons Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 justify-items-center">
-                <div class="relative flex flex-col items-center space-y-4">
-                    <!-- Semicircle Base -->
+                <div class="relative flex flex-col items-center space-y-2 group">
                     <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                    <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                      <img src="./assets/react-logo.png" alt="React" title="React"
+                           class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                     </div>
-                
-                    <!-- Soft Shadow/Blur Underneath -->
-                    <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                    <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
                 </div>
     
     
-                <div class="relative flex flex-col items-center space-y-4">
-                    <!-- Semicircle Base -->
+                <div class="relative flex flex-col items-center space-y-2 group">
                     <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                    <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                      <img src="./assets/nodeJS-logo.png" alt="Node JS" title="Node.js"
+                           class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                     </div>
-                
-                    <!-- Soft Shadow/Blur Underneath -->
-                    <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px] "></div>
+                    <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
                 </div>
     
     
-                <div class="relative flex flex-col items-center space-y-4">
-                    <!-- Semicircle Base -->
+                <div class="relative flex flex-col items-center space-y-2 group">
                     <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                    <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                      <img src="./assets/tailwind-logo.png" alt="TailwindCSS" title="TailwindCSS"
+                           class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                     </div>
-                
-                    <!-- Soft Shadow/Blur Underneath -->
-                    <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                    <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
                 </div>
     
-                <div class="relative flex flex-col items-center space-y-4">
-                    <!-- Semicircle Base -->
+                <div class="relative flex flex-col items-center space-y-2 group">
                     <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                    <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                      <img src="./assets/docker-logo.webp" alt="Docker" title="Docker"
+                           class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                     </div>
-                
-                    <!-- Soft Shadow/Blur Underneath -->
-                    <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px] "></div>
+                    <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
                 </div>
     
-                <div class="relative flex flex-col items-center space-y-4">
-                    <!-- Semicircle Base -->
+                <div class="relative flex flex-col items-center space-y-2 group">
                     <div class="relative w-36 h-24 bg-[#f3e7e6] rounded-t-full flex items-center justify-center shadow-inner">
-                    <img src="./assets/python-logo.png" alt="TV" class="h-16 w-16" />
+                      <img src="./assets/firebase-logo.png" alt="Firebase" title="Firebase"
+                           class="h-16 w-16 group-hover:animate-spin transition-transform duration-300" />
                     </div>
-                
-                    <!-- Soft Shadow/Blur Underneath -->
-                    <div class="w-24 h-4 bg-pink-300 rounded-full blur-md opacity-50 mt-[-10px]"></div>
+                    <div class="w-24 h-4 bg-pink-300 group-hover:bg-pink-500 rounded-full blur-md opacity-50 mt-[-10px] transition-colors duration-300"></div>
                 </div>
             </div>
             </div>

@@ -49,21 +49,20 @@
 
 <body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36 ">
     <!-- Navbar -->
-    <div class="bg-pinkForBg fixed w-full top-0 z-10">
-        <nav class="flex justify-between items-center px-8 py-8 mx-6">
-            <!-- <h1 class="text-xl">Kayleen Cruz</h1> -->
-            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
-            <div class="flex space-x-6">
-            <a href="#about" class="hover:text-gray-400">About</a>
-            <a href="#skills" class="hover:text-gray-400">Skills</a>
-            <a href="#projects" class="hover:text-gray-400">Projects</a>
-            </div>
-        </nav>
-    </div>
+
+    <nav id="sideNav" class="hidden lg:block fixed top-1/2 transform -translate-y-1/2 z-10 py-4 px-8 uppercase space-y-4 text-md tracking-wide">
+        <a href="index.html" data-target="index" class="block nav-link text-gray-400 hover:text-pinkBrown pb-4">← Home</a>
+        <a href="#home" data-target="home" class="block nav-link text-gray-400 hover:text-pinkBrown">Overview</a>
+        <a href="#inputs" data-target="inputs" class="block nav-link text-gray-400 hover:text-pinkBrown">Inputs</a>
+        <a href="#output" data-target="output" class="block nav-link text-gray-400 hover:text-pinkBrown">Output</a>
+        <a href="#redesign" data-target="redesign" class="block nav-link text-gray-400 hover:text-pinkBrown">State Model</a>
+        <a href="#conclusion" data-target="conclusion" class="block nav-link text-gray-400 hover:text-pinkBrown">Conclusion</a>
+    </nav>
+
 
 
     <!-- Home -->
-    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-40">
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-24">
         <h1 class="text-5xl md:text-7xl text-center mb-16 ">Accessible Components</h1>
       
         <div class="flex flex-col md:flex-row justify-center items-center">
@@ -99,9 +98,21 @@
         </div>
     </section>
 
+
+    <!-- Overview -->
+    <section id="Overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Overview</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            To learn how components incorporate accessibility for user interaction, I chose
+            to analyze a search bar across different platforms. I reflected on the components 
+            different states and trading off between learnability, memorability, efficiency,
+            and accessibility, I redesigned Gmail's search bar.
+        </p>
+    </section>
+
     <!-- Inputs -->
-    <section id="Inputs" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 pb-12 text-darkBrown text-justify">
-        <h1 class="text-3xl pb-8 text-center font-semibold">Inputs:</h1>
+    <section id="inputs" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 pb-12 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Inputs</h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
             First, I sought out to interact with the different components on each 
             application using different inputs: keyboard, mouse, and touch. 
@@ -343,8 +354,8 @@
     </div>
 
     <!-- Output -->
-      <section id="Output" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify pb-12">
-        <h1 class="text-3xl pb-8 text-center font-semibold">Output:</h1>
+      <section id="output" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify pb-12">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Output</h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
             Next, I observed the visual cues that show users when the search bar 
             changes states. I focused on the color of the search bar, border thickness, 
@@ -447,7 +458,7 @@
             </div>
         </div>
 
-      <section id="State Model and Redesign" class="flex flex-col w-full max-w-2xl mx-auto pt-24 px-8 text-darkBrown text-justify">
+      <section id="redesign" class="flex flex-col w-full max-w-2xl mx-auto pt-24 px-8 text-darkBrown text-justify">
         <h1 class="text-3xl pb-8 text-center font-semibold">State Model and Redesign</h1>
         <p class="text-lg text-darkBrown pb-18 text-left"> 
             Given the lack of a hover state and observed difficulty navigating to search
@@ -632,9 +643,9 @@
         </div>
     </section>
 
-        <section id="Reflection" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
-            <h1 class="text-3xl pb-8 text-center font-semibold">Reflection</h1>
-            <p class="text-lg text-darkBrown pb-18 text-left"> 
+        <section id="conclusion" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+            <h1 class="text-3xl pb-8 text-center font-semibold">Conclusion</h1>
+            <p class="text-lg text-darkBrown pb-48 text-left"> 
                 Often components are designed with mouse/touchpad 
                 users in mind, excluding that some people can only navigate through the keyboard.
                 Before reading Google's "Keyboard shorcuts" guide, I thought I was 
@@ -645,6 +656,30 @@
             </p>
         </section>
 
- 
-    
+
+        <script>
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+          
+            window.addEventListener("scroll", () => {
+              let current = "";
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                  current = section.getAttribute("id");
+                }
+              });
+          
+              navLinks.forEach((link) => {
+                link.classList.remove("text-lighterBrown", "font-semibold");
+                link.classList.add("text-gray-400"); // restore gray for non-active
+          
+                if (link.dataset.target === current) {
+                  link.classList.remove("text-gray-400");
+                  link.classList.add("text-lighterBrown", "font-semibold");
+                }
+              });
+            });
+          </script>
 </body>
