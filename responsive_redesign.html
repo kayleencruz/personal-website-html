@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleen Cruz Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  pinkForBg: "#FEF4F3",
+                  darkBrown: "#4B1D1D",
+                  lighterBrown: '#4B1D1DCC',
+                  pinkBrown: "#D6B3B1",
+                  darkerPinkBrown: "#A87C79",
+              },
+          fontFamily: {
+              serif: ['"Inria Serif"', 'serif'],
+          },
+          },
+      },
+      }
+  </script>
+
+  <!-- Google Fonts (Inria Serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Apply font via CSS variable -->
+  <style>
+      :root {
+      --font-inria-serif: 'Inria Serif', serif;
+      }
+
+      body {
+      font-family: var(--font-inria-serif);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a6122f212c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+
+<body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36">
+
+
+    <!-- <div class="bg-pinkForBg fixed w-full top-0 z-10">
+        <nav class="flex justify-between items-center px-8 py-8 mx-6">
+            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
+            <div class="flex space-x-6">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#skills" class="hover:text-gray-400">Skills</a>
+            <a href="#projects" class="hover:text-gray-400">Projects</a>
+            </div>
+        </nav>
+    </div> -->
+
+
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-24">
+        <h1 class="text-5xl md:text-7xl text-center mb-8">Responsive Redesign</h1>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <img src="./assets/old-gms.png" alt="original website laptop and phone view" width="900" height="900" class="object-cover" />
+          <!-- <img src="./assets/gms-homepage-redesign.png" alt="Laptop view" class="w-[500px] max-w-full object-contain" /> -->
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-12 mt-6 w-full max-w-5xl text-left">
+          <div class="space-y-4 text-sm">
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Type</p>
+              <p>Self Initiated</p>
+            </div>
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Role</p>
+              <p>UX Designer, Frontend Engineer</p>
+            </div>
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Tools</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">React</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">FIGMA</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flex flex-col justify-between space-y-8 max-w-md">
+            <p class="text-lg leading-relaxed">
+              Redesigning a middle school’s webpage — from identifying problems to designing and coding the final version.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://figma.com" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">FIGMA →</a>
+              <a href="https://kayleencruz.github.io/web-redesign/" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">Website →</a>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+
+    <section id="Overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Overview:</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            My goal this week was to redesign my middle school's web page as I felt 
+            its interface was not serving the users. I first analyzed and identified
+            flaws in the existing interface then created mockups that addressed 
+            usability problems. I then built a responsive web page using my prototypes. 
+            Below are the stakeholders the website serves, problems with the 
+            current website, and my responsive redesign. 
+        </p>
+    </section>
+
+
+    <section id="About Website Chosen" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown">
+        <h1 class="text-3xl pb-4 text-center font-semibold"> About the website chosen </h1>
+    </section>
+
+    <div class="w-full flex flex-col items-center">
+        <img src="./assets/old-gms.png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="About Website Chosen" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg">
+        <div class="flex flex-col items-start space-y-4">
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Original Website</p>
+                <a href="https://www.gagems.net/" class="text-lg hover:underline">https://www.gagems.net/</a>
+            </div>
+
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Purpose</p>
+                <p> 
+                    The homepage displays photos of the school,
+                    annoucements and highlights, upcoming events, quick links, and what appears to be resources.
+                </p>
+            </div>
+
+
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">The website serves</p>
+                <ul class="list-[upper-roman] list-inside pb-4 max-w-2xl text-justify"> 
+                    <li> Students </li>
+                    <li> Parents/Guardians</li>
+                    <li> Teachers </li>
+                    <li> Prospective students & parents </li>
+                </ul>
+            </div>
+
+
+<!-- 
+            <p class="pb-4"> <span class="text-xl">Original Website:</span> <a href="https://www.gagems.net/" class="text-lg hover:underline">https://www.gagems.net/</a> </p> -->
+            <!-- <p class="pb-4"> <span class="text-xl">Purpose</span>: The homepage displays photos of the school,
+            annoucements and highlights, upcoming events, quick links, and what appears to be resources. </p>
+            <h2 class="pb-2 text-xl">The website serves:</h2>
+            <ul class="list-[upper-roman] list-inside pb-4 max-w-2xl text-justify"> 
+                <li> Students </li>
+                <li> Parents/Guardians</li>
+                <li> Teachers </li>
+                <li> Prospective students & parents </li>
+            </ul> -->
+        </div>
+    </section>
+
+
+    <section id="Finding Problems" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
+        <h1 class="text-3xl pb-8 text-center text-darkBrown font-semibold"> Finding Problems </h1>
+        <div class="flex flex-col items-start">
+            <p class="text-2xl pb-6">Usability Problems</p>
+
+            <ul class="list-[upper-roman] list-inside pb-4 max-w-2xl text-justify"> 
+                <li class="pb-10 text-xl text-bold">
+                    Poor Organization 
+                    <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
+                        <li>
+                            No clear headings or sections
+                        </li>
+
+                        <li>
+                            No clear hierachy of information
+                        </li>
+
+                        <li>
+                            Impact: First-time users may feel overwhelmed and unsure 
+                            of where to start. Important information may be missed.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="pb-10 text-xl text-bold" >
+                    Weak Text Hierarchy & Readability Issues
+                    <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
+                        <li>
+                            Section titles are too small and do not stand out.
+                        </li>
+                        <li>
+                            Inconsistent image sizes and layout create a cluttered appearance.
+                        </li>
+
+                        <li>
+                            Impact: Users may find the site hard to read and visually overwhelming.
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="pb-10 text-xl text-bold">
+                    Unclear interactive elements 
+                    <ul class="list-disc pl-8 pt-4 space-y-2 text-lg">
+                        <li>
+                            Buttons (e.g., hhsa, ltech, vapata, magnet) look like 
+                            static images with no hover effects or visual cues.
+                        </li>
+
+                        <li>
+                            Impact: Users may struggle to navigate the site 
+                            efficiently and may overlook important links.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <p class="text-2xl pb-6">Accessibility Problems</p>
+            <p class="text-lg pb-6">Using WebAim Wave to analyze the accessibility of 
+            the website, WebAim did not detect too many major errors - just alerts. There were 3 errors: 1x empty link, 
+            1x multiple form labels and 1x broken aria menu. There were also 2 constrast errors
+            , numerous redundant links, alt tags,and title text. </p>
+
+        </div>
+    </section>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-24">
+        <h1 class="text-3xl pb-8 text-center text-darkBrown font-semibold">Visual Redesign</h1>
+        <p class="text-lg pb-8 text-left"> 
+            Next, I created a visual design style guide and mockups for a laptop,
+            ipad, and phone that addressed the usability and accessibility issues.
+        </p>
+        <h2 class="text-2xl">Visual Design Style Guide</h2>
+    </section>
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <img src="./assets/visual-style-guide.png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            Visually, my goal was to make the website easier to read/skim through. 
+            I did this by having clear typography to identify section titles and subheadings vs 
+            regular text. I also made the text bigger to address readability issues. 
+            I also added hover states to all the links & buttons making it clear that they
+            are navigable. 
+        </p>
+    </section>
+
+    <section id="Mockup" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <h2 class="text-2xl pb-8">Mockups</h2>
+        <p class="text-lg pb-8 text-left"> 
+            Using Figma, I designed an responsive interface that works for all screen sizes.
+        </p>
+    </section>
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <p class="italic pb-6 text-lighterBrown"> Mockup of Macbook Air</p>
+        <img src="./assets/mockup-with-notes.png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Mockup" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            My goal when creating the mockups was to organize all the information in the website better. 
+            This consisted of reading through the website and categorizing all the information
+            to fit into a clear label so users can easily find it. Condensing the information into sections
+            also helped me target the accessibility issue of having redundant links.
+        </p>
+
+        <p class="pb-4 font-semibold"> Relevant Sections Identified:</p>
+
+        <ul class="list-[upper-roman] list-inside text-lg space-y-2">
+            <li> Academies</li>
+            <li> Frequently Visited Resources</li>
+            <li> Calendar</li>
+            <li> News & Announcments</li>
+            <li> Media Gallery</li>
+            <li> Quick & Student Links (in footer)</li>
+        </ul>
+
+        <p class="pb-4 pt-8 font-semibold"> Design Decisons:</p>
+
+        <ul class="list-[upper-roman] list-inside text-lg space-y-4">
+            <li> 
+            Added "Show ..." buttons to the sections with the most information 
+            displaying only a limited amount of the homepage. The button will direct
+            users to a corresponding page for the section. For instance, a page with just 
+            just the upcoming events when clicking "Show Calendar".
+            </li>
+            <li> Added headings to ALL sections specifiying what information they will find there.</li>
+            <li> Sections alternated in background color to further differentiate the information. </li>
+            <li> Moved quick links in the footer instead of its own section.</li>
+            <li> Redesigned the second Navbar with icons to improve the responsiveness. 
+            Made the navigatble icons overlapping photo ALWAYS appear on page instead of 
+            moving that to the menu for small displays.</li>
+        </ul>
+
+        <p class="pt-10 pb-4 font-semibold"> Responsiveness:</p>
+
+    </section>
+
+    <div class="w-full flex flex-col items-center pt-8 px-8 text-lighterBrown">
+        <p class="italic pb-2"> Mockup of phone & tablet</p>
+        <p class="italic pb-6"> (Full page not pictured)</p>
+        <img src="./assets/output-onlinepngtools (1).png" alt="original website laptop and phone view" width="1000" height="1000" class="object-cover" />
+    </div>
+
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            Icons are in grid layout; rows of 4 for tablets and rows of 3 for smaller displays.
+            Spacing between links in navbar decreases with screen size until it compresses
+            into a Menu popup (pictured in the phone).
+        </p>
+    </section>
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <img src="./assets/resources.png" alt="redesiged resources section" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            Images in academies in grid; row of 4 for larger-to-meduim displays and 
+            rows of 2 for smaller. Flyers in frequently visited resources change to 
+            vertical layout (stacked) on medium-to-small displays.
+        </p>
+    </section>
+
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <img src="./assets/calendar-screen.png" alt="redesigned calendar section on phone and tablet" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+        Calendar and News & Announcements section change to vertical layout (stacked). 
+        Text wraps to fit smaller screens. 
+        </p>
+    </section>
+
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <img src="./assets/news.png" alt="redesigned news section on phone and tablet" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            News & Announcements mantains a horizontal side-by-side layout for each
+            flyer and its title for meduim displays. For smaller displays, the text breaks into a new line
+            under the corresponding flyer.
+        </p>
+    </section>
+
+
+    <div class="w-full flex flex-col items-center pt-8 px-8">
+        <img src="./assets/gallery-footer.png" alt="redesigned media gallery and footer on phone and tablet" width="1000" height="1000" class="object-cover" />
+    </div>
+
+    <section id="Visual redesign" class="flex flex-col w-full max-w-2xl px-8  mx-auto text-lg pt-12">
+        <p class="text-lg pb-8 text-left"> 
+            Photo slideshow scales as screen gets smaller. Spacing between columns in footer
+            decreases on meduim displays and stacks on smaller/phone displays.
+        </p>
+    </section>
+
+    <section id="Creating the page" class="flex flex-col w-full max-w-2xl px-8 mx-auto text-lg pt-12">
+
+        <h1 class=" text-3xl pb-6 text-center text-darkBrown font-semibold">Creating the web page</h1>
+        <div class="pb-8">
+            <p class="uppercase font-medium text-lighterBrown tracking-wide">Redesigned Website</p>
+            <a href="https://kayleencruz.github.io/web-redesign/" class="text-lg hover:underline">https://kayleencruz.github.io/web-redesign/</a>
+        </div>
+
+
+
+<!-- 
+        <p class="pb-4"> <span class="text-xl">Redesigned website:</span> <a href="https://kayleencruz.github.io/web-redesign/" class="text-lg hover:underline">https://kayleencruz.github.io/web-redesign/</a> </p> -->
+        <p class="text-lg pb-8 text-left"> 
+            To create a responsive web page, I utilized HTML and TailwindCSS.
+            As for design, I stayed accurate to the mockups and visual style guide. This design
+            made the webpage easily navigatable and simplified finding information while 
+            working with all screen sizes. It was coding the page that I addresssed the errors from WebAim Wave. I 
+            made sure to have specific alt tags for all images, remove redudant title text, and have
+            text sizes that are responsive and readable for all screen sizes.
+        </p>
+
+        <p class="text-lg pb-8 text-center"> 
+            Feel free to explore the website on your own! :D
+        </p>
+    </section>
+</body>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleen Cruz Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  pinkForBg: "#FEF4F3",
+                  darkBrown: "#4B1D1D",
+                  lighterBrown: '#4B1D1DCC',
+                  pinkBrown: "#D6B3B1",
+                  darkerPinkBrown: "#A87C79",
+              },
+          fontFamily: {
+              serif: ['"Inria Serif"', 'serif'],
+          },
+          },
+      },
+      }
+  </script>
+
+  <!-- Google Fonts (Inria Serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Apply font via CSS variable -->
+  <style>
+      :root {
+      --font-inria-serif: 'Inria Serif', serif;
+      }
+
+      body {
+      font-family: var(--font-inria-serif);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a6122f212c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36 ">
+    <!-- Navbar -->
+    <div class="bg-pinkForBg fixed w-full top-0 z-10">
+        <nav class="flex justify-between items-center px-8 py-8 mx-6">
+            <!-- <h1 class="text-xl">Kayleen Cruz</h1> -->
+            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
+            <div class="flex space-x-6">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#skills" class="hover:text-gray-400">Skills</a>
+            <a href="#projects" class="hover:text-gray-400">Projects</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-40">
+        <h1 class="text-5xl md:text-7xl text-center mb-16 ">Accessible Components</h1>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <img src="./assets/Search-bars-laptop (1).png" alt="original website laptop and phone view" width="800" height="800" class="object-cover" />
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-12 w-full max-w-5xl text-left mt-16">
+          <div class="space-y-4 text-sm">
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Type</p>
+              <p>Self Initiated</p>
+            </div>
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Role</p>
+              <p>UX Designer</p>
+            </div>
+            <div>
+              <p class="uppercase font-medium text-lighterBrown tracking-wide">Tools</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">FIGMA</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="flex flex-col justify-between space-y-8 max-w-md">
+            <p class="text-lg leading-relaxed">
+                Analyzing the accessibility of search bars — then redesigning Gmail's search.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://figma.com" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">FIGMA →</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Inputs -->
+    <section id="Inputs" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 pb-12 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Inputs:</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            First, I sought out to interact with the different components on each 
+            application using different inputs: keyboard, mouse, and touch. 
+            I tracked how the user experience of each input noting its functionalities. 
+            Below is a overview of the different interactions.
+        </p>
+    </section>
+
+
+    <!-- Responsive Table Wrapper -->
+    <div class="flex items-center justify-center px-8">
+        <div class=" w-full max-w-2xl overflow-x-auto">
+            <div class="min-w-[650px] w-full max-w-2xl mx-auto shadow-md rounded-lg overflow-hidden">
+                <table class="w-full text-sm text-center border-collapse border border-lighterBrown">
+                    <thead>
+                    <tr>
+                        <th class="bg-pinkBrown border border-lighterBrown p-2"></th>
+                        <th class="bg-pinkBrown border border-lighterBrown p-2">Spotify</th>
+                        <th class="bg-pinkBrown border border-lighterBrown p-2">Pinterest</th>
+                        <th class="bg-pinkBrown border border-lighterBrown p-2">Gmail</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="hover:bg-pink-50">
+                        <td class="bg-pinkBrown font-semibold border border-lighterBrown p-2">Mouse/Touchpad</td>
+                        <td class="border border-lighterBrown p-2 text-left">
+
+                            <ul class=" space-y-2">
+                                <li>
+                                    Search bar clickable with hover state.
+                                </li>
+
+                                <li>
+                                    Click elsewhere to exit.
+                                </li>
+
+                                <li>
+                                    Right click for popup.
+                                </li>
+
+                                <li>
+                                    Alt tag for search icon.
+                                </li>
+
+                                <li>
+                                    No state change on empty submit.
+                                </li>
+
+                                <li>
+                                    Filters as you type.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Clickable with hover.
+                                </li>
+
+                                <li>
+                                    Smart options submit.
+                                </li>
+
+                                <li>
+                                    Right click: popup.
+                                </li>
+                                
+                                <li>
+                                    No empty text behavior.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    No hover state.
+                                </li>
+
+                                <li>
+                                    Click icon to submit.
+                                </li>
+
+                                <li>
+                                    Right click enabled.
+                                </li>
+
+                                <li>
+                                    Alt tag present.
+                                </li>
+
+                                <li>
+                                    No state change on empty submit.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-pink-50">
+                        <td class="bg-pinkBrown font-semibold border border-lighterBrown p-2">Keyboard</td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Cmd + K opens search.
+                                </li>
+
+                                <li>
+                                    Enter submits.
+                                </li>
+
+                                <li>
+                                    Esc exits + clears.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Tab triggers search.
+                                </li>
+
+                                <li>
+                                    Enter submits.
+                                </li>
+
+                                <li>
+                                    Esc exits + clears.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Tab to navigate.
+                                </li>
+
+                                <li>
+                                    / activates (with setting).
+                                </li>
+
+                                <li>
+                                    Enter submits.
+                                </li>
+
+                                <li>
+                                    Esc exits.
+                                </li>
+
+                                <li>
+                                    Tab to autofill.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-pink-50">
+                        <td class="bg-pinkBrown font-semibold border border-lighterBrown p-2">Touch</td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Search bar at top.
+                                </li>
+
+                                <li>
+                                    Tap opens new screen.
+                                </li>
+
+                                <li>
+                                    Back arrow exits.
+                                </li>
+
+                                <li>
+                                    Keyboard submits.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Icon triggers search page.
+                                </li>
+
+                                <li>
+                                    Cancel to exit.
+                                </li>
+
+                                <li>
+                                    Submit via keyboard.
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="border border-lighterBrown p-2 text-left">
+                            <ul class="space-y-2">
+                                <li>
+                                    Icon + label "Search".
+                                </li>
+
+                                <li>
+                                    Opens new page.
+                                </li>
+
+                                <li>
+                                    Cancel exits.
+                                </li>
+
+                                <li>
+                                    Keyboard submits.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+    <div class="flex flex-col w-full max-w-2xl px-8 mx-auto text-darkBrown text-justify">
+        <div class="flex flex-col mx-auto pt-24 text-darkBrown text-justify">
+            <h1 class="text-xl text-center font-semibold">Summary of Observations:</h1>
+
+            <ul class="pt-8 list-disc px-6 text-lg"> 
+                <li> 
+                    General appearance of the search bars between applications is very similar. 
+                    Rounded box with search icon (magnifying glass). 
+                </li>
+                <li>
+                    Placeholder text telling users how to use the text box ("Search mail")
+                </li>
+                <li>Spotify and Pinterest have hover states, Gmail does not</li>
+                <li> 
+                    Gmail keyboard shorcuts not memorable and Pinterst is just Tab.
+                    Spotify was the most keyboard accessible with a search bar popping up
+                    when the specified keys were pressed. 
+                </li>
+
+                <li> 
+                    Enter all used to submit query -- very intuitive. 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Output -->
+      <section id="Output" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify pb-12">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Output:</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            Next, I observed the visual cues that show users when the search bar 
+            changes states. I focused on the color of the search bar, border thickness, 
+            and the contents inside the search bar/text box. I also utilized a screen reader
+            on all applications to see how each application interacted with it. Below is a overview of my observations.
+        </p>
+      </section>
+
+       <!-- Responsive Table -->
+       <div class="flex items-center justify-center px-8">
+        <div class="w-full max-w-2xl overflow-x-auto">
+            <div class="min-w-[650px] w-full max-w-2xl mx-auto shadow-md rounded-lg overflow-hidden">
+              <table class="w-full text-sm text-center border-collapse border border-lighterBrown">
+                <thead>
+                    <tr role="row">
+                    <th class="bg-pinkBrown border border-lighterBrown p-2" role="columnheader"></th>
+                    <th class="bg-pinkBrown border border-lighterBrown p-2" role="columnheader">Spotify</th>
+                    <th class="bg-pinkBrown border border-lighterBrown p-2" role="columnheader">Pinterest</th>
+                    <th class="bg-pinkBrown border border-lighterBrown p-2" role="columnheader">Gmail</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="hover:bg-pink-50 focus-within:bg-gray-100" role="row">
+                        <td class="border border-darkBrown bg-pinkBrown font-semibold p-2" role="rowheader">Color</td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Hover: Different color -- Lighter shade of grey
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Hover + On Click: Different color -- Darker color search bar 
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Click: Different color -- Search bar becomes white
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-pink-50 focus-within:bg-gray-100" role="row">
+                        <td class="border border-darkBrown bg-pinkBrown font-semibold p-2" role="rowheader">Border Thickness</td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Hover: Slight light grey outline <br /> <br />
+
+                            On click: 
+                            Bold white outline around text box and bolded search icon <br /> <br />
+
+                            On Submit/Enter:
+                            outline disappears
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Click: Bright blue + bold outline around text box
+
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On Click: Shadow outline
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-pink-50 focus-within:bg-gray-100" role="row">
+                        <td class="border border-darkBrown bg-pinkBrown font-semibold p-2" role="rowheader">Text in Box</td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On click: X button to exit <br /> <br />
+                            On Hover: Keyboard shorcut
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            On click: X button to exit <br /> <br />
+                            No more search icon <br /> <br />
+                            submit button
+                        </td>
+                        <td class="border border-darkBrown p-2" tabIndex={0}>
+                            Typing: "tab" to autofill
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+
+        <div class="flex flex-col w-full max-w-2xl px-8 mx-auto text-darkBrown text-justify">
+            <div class="flex flex-col mx-auto pt-24 text-darkBrown text-justify">
+                <h1 class="text-xl text-center font-semibold">Summary of Observations:</h1>
+    
+                <ul class="pt-8 list-disc px-6 text-lg"> 
+                    <li> 
+                        Apperances changed for Spotify and Pinterest on both hover and on click.
+                    </li>
+                    <li>
+                        Gmail's appearance only changed for on click.
+                    </li>
+                    <li> Spotified gave keyboard shortcut to activate search on hover. </li>
+                    <li> 
+                        Gmail gave keyboard shortcut to autofill but activate search.
+                    </li>
+        
+                    <li> 
+                        Gmail and Spotify very screen reader accessible. Tells users they are in 
+                        search and prompts users type if they want to enter text in this field. In contrast, Pinterest 
+                        just read out the placeholder text "search" with no futher instructions.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+      <section id="State Model and Redesign" class="flex flex-col w-full max-w-2xl mx-auto pt-24 px-8 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">State Model and Redesign</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            Given the lack of a hover state and observed difficulty navigating to search
+            for keyboard users, I decided to focus on redesiging the search bar on Gmail. 
+            Before getting to my redesign I looked closer at the input/output/state interactions 
+            on Gmail and then reflected on how I can improve its accessibility. Below is the current
+            Gmail design broken down through its visual states and state models, a problem-solution 
+            flowchart, and finally the redesign given the solutions above.
+        </p>
+        
+
+        <p class="font-semibold text-2xl pt-20"> Visual of Current Gmail Search Bar </p>
+
+        <div class="w-full flex flex-col items-center pt-8 text-lighterBrown">
+            <p class="italic pb-2"> Mouse and Keyboard Interactions</p>
+            <img src="./assets/og-search.png"  alt="gmail search bar"  width="800" height="800" class="object-cover" />
+        </div>
+
+        <p class="font-semibold text-2xl pt-12"> State Models of Current Gmail Search Bar</p>
+        <!-- <p class="font-extralight pb-2"> Mouse and Keyboard Interactions </p> -->
+
+        <div class="w-full flex flex-col items-center pt-8 text-lighterBrown">
+            <p class="italic pb-2"> Mouse Interactions</p>
+            <div class="flex flex-col items-center justify-center">
+            <img
+                src="./assets/og-mouse-user.png" 
+                alt="gmail search bar" 
+                width="800"
+                height="800"
+                class="object-cover pb-12"
+            />
+            
+            <p class="italic pb-2"> Keyboard Interactions</p>
+            <img
+                src="./assets/og-keyboard.png" 
+                alt="gmail search bar" 
+                width="800"
+                height="800"
+                class="object-cover"
+            />
+            </div>
+        </div>
+
+    <h2 class="font-bold text-2xl pb-12 pt-12"> Redesigned Gmail Search Bar: </h2>
+    <div class="text-left max-w-2xl space-y-10">
+
+
+    <div class="flex items-center space-x-4">
+
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Problem #1</p>
+            <p class="font-extralight pb-2">No hover state</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>No hover state to indicate users should click the text box to search their mail.</li>
+            </ul>
+        </div>
+
+        <div class="text-3xl">➡️</div>
+
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Solution #1</p>
+            <p class="font-extralight pb-2">On Hover: Change Appearance</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>
+                    On hover, the search bar mimics the on-click state — turns white, adds a drop shadow, 
+                    and darkens the search icon.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="flex items-center space-x-4">
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Problem #2</p>
+            <p class="font-extralight pb-2">Hard-to-Learn Keyboard Shortcut</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>
+                    Gmail hides keyboard shortcuts, making them hard to discover and unintuitive 
+                    without reading guides.
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-3xl text-gray-500">➡️</div>
+
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Solution #2</p>
+            <p class="font-extralight pb-2">On Hover: Show Shortcut Key</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>
+                    Display the "/" key on hover to teach users about the shortcut and improve memorability.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="flex items-center space-x-4">
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Problem #3</p>
+            <p class="font-extralight pb-2">No Difference Between Hover & Active States</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>
+                    Without differentiation, users might not realize they are actively typing in the text box.
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-3xl">➡️</div>
+
+        <div class="border-4 border-pinkBrown bg-pink-50 rounded-lg p-4 w-1/2 min-h-48">
+            <p class="font-semibold text-lg text-pink-950">Solution #3</p>
+            <p class="font-extralight pb-2">On Click: Blue Outline</p>
+            <ul class="list-disc ml-4 text-sm">
+                <li>
+                    Add a bold blue outline to the text box to indicate focus, matching Gmail's color scheme.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="border-2 border-darkerPinkBrown bg-pink-50 rounded-lg p-4">
+        <p class="font-semibold text-lg text-yellow-900">Tradeoffs</p>
+        <ul class="list-disc ml-4 text-sm">
+            <li>
+                Hover states are not recognized by screen readers, limiting accessibility improvements.
+            </li>
+            <li>
+                Keyboard users relying on the "tab" key may find the hover-triggered spacebar unintuitive.
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+        <p class="font-semibold text-2xl pt-20"> Visual of Redesign </p>
+
+        <div class="w-full flex flex-col items-center pt-8 text-lighterBrown">
+            <p class="italic pb-2"> Mouse and Keyboard Interactions</p>
+            <img src="./assets/hover-search.png"   alt="gmail search bar redesign" width="800" height="800" class="object-cover" />
+        </div>
+
+        <!-- <p class="font-extralight pb-2"> Mouse and Keyboard Interactions </p>
+
+        <div class= "py-12">
+            <img
+                src="./assets/hover-search.png" 
+                alt="gmail search bar redesign" 
+                width="800"
+                height="800"
+                class="object-cover"
+            />
+        </div>      -->
+
+        <p class="font-semibold text-2xl pt-12"> State Models of Redesign</p>
+        <!-- <p class="font-extralight pb-2"> Mouse and Keyboard Interactions </p>
+ -->
+
+        <div class="w-full flex flex-col items-center pt-8 text-lighterBrown">
+            <p class="italic pb-2"> Mouse Interactions</p>
+            <div class="flex flex-col items-center justify-center">
+            <img
+                src="./assets/redesigned-mouse.png" 
+                alt="gmail search bar" 
+                width="800"
+                height="800"
+                class="object-cover pb-12"
+            />
+            
+            <p class="italic pb-2"> Keyboard Interactions</p>
+            <img
+                src="./assets/redesigned-keyboard.png" 
+                alt="gmail search bar" 
+                width="800"
+                height="800"
+                class="object-cover"
+            />
+            </div>
+        </div>
+    </section>
+
+        <section id="Reflection" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+            <h1 class="text-3xl pb-8 text-center font-semibold">Reflection</h1>
+            <p class="text-lg text-darkBrown pb-18 text-left"> 
+                Often components are designed with mouse/touchpad 
+                users in mind, excluding that some people can only navigate through the keyboard.
+                Before reading Google's "Keyboard shorcuts" guide, I thought I was 
+                only able to naviagte to the search bar by clicking tab until I got 
+                to the component. With Gmail having many features, this was very tedious 
+                especially after doing it numerous times. My redesign kept this in mind
+                by adding an on hover state that gives the users the command.
+            </p>
+        </section>
+
+ 
+    
+</body>

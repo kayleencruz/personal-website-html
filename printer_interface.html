@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleen Cruz Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  pinkForBg: "#FEF4F3",
+                  darkBrown: "#4B1D1D",
+                  lighterBrown: '#4B1D1DCC',
+                  pinkBrown: "#D6B3B1",
+                  darkerPinkBrown: "#A87C79",
+              },
+          fontFamily: {
+              serif: ['"Inria Serif"', 'serif'],
+          },
+          },
+      },
+      }
+  </script>
+
+  <!-- Google Fonts (Inria Serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Apply font via CSS variable -->
+  <style>
+      :root {
+      --font-inria-serif: 'Inria Serif', serif;
+      }
+
+      body {
+      font-family: var(--font-inria-serif);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a6122f212c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+
+<body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36">
+    <!-- Navbar -->
+    <div class="bg-pinkForBg fixed w-full top-0 z-10">
+        <nav class="flex justify-between items-center px-8 py-8 mx-6">
+            <!-- <h1 class="text-xl">Kayleen Cruz</h1> -->
+            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
+            <div class="flex space-x-6">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#skills" class="hover:text-gray-400">Skills</a>
+            <a href="#projects" class="hover:text-gray-400">Projects</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-40">
+        <h1 class="text-5xl md:text-7xl text-center mb-8">Personas and Storyboarding</h1>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <img src="./assets/printer-pic.jpg" alt="original website laptop and phone view" width="900" height="900" class="object-cover" />
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-12 mt-6 w-full max-w-5xl text-left">
+            <div class="space-y-4 text-sm">
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Type</p>
+                <p>Self Initiated</p>
+            </div>
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Role</p>
+                <p>UX Designer, Frontend Engineer</p>
+            </div>
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Tools</p>
+                <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">React</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">FIGMA</span>
+                </div>
+            </div>
+            </div>
+        
+            <div class="flex flex-col justify-between space-y-8 max-w-md">
+            <p class="text-lg leading-relaxed">
+                Illustrating user needs and experiences through user interviews, personas, and storyboards.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://figma.com" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">FIGMA →</a>
+                <a href="https://kayleencruz.github.io/web-redesign/" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">Website →</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Overview" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+        <h1 class="text-3xl pb-8 text-center font-semibold">Overview:</h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            My goal this week was to understand the user journey and illustrate their needs.
+            I did this by making real-life observations and then conduct interviews to 
+            understand how a user interacts with a product. My interface of choice
+            were the printers at Brown. I oberserved how people interacted with them at the 
+            library and conducted 3 interviews. 
+        </p>
+    </section>
+
+
+
+    <section id="How do printers at Brown look like?" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+
+        <h1 class="text-3xl pb-8 text-center font-semibold"> How do Printers at Brown look like? </h1>
+        <p class="text-lg text-darkBrown pb-18 text-left"> 
+            Brown University printers all have a touch screen display in front of
+            of the printers which support both printing and scanning. Interacting with
+            this display is necessary to complete any task on the printer. Below are rough 
+            illustrations of the interface and buttons it has.
+        </p>
+
+        <div class="w-full flex flex-col items-center pt-8 text-lighterBrown">
+            <p class="italic pb-2"> Initial Screen - Login</p>
+            <div class="flex flex-col items-center justify-center">
+                <img
+                src="./assets/printer-login.png" 
+                alt="gmail search bar" 
+                width="600"
+                height="600"
+                class="object-cover pb-12"
+                />
+
+                <p class="italic pb-2"> Screen after signing in</p>
+                <img
+                src="./assets/printer-home.png" 
+                alt="gmail search bar" 
+                width="600"
+                height="600"
+                class="object-cover"
+                />
+            </div>
+        </div>
+      </section>
+
+     <!-- {/* Interview Questions + summary*/} -->
+      <section id="Interview questions and results" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+
+        <h1 class="text-3xl pb-8 text-center font-semibold"> User Research </h1>
+    
+
+        <p class="font-semibold text-xl pt-8"> Interview Questions </p>
+
+        <ul class="text-lg pt-8 list-decimal list-inside space-y-2"> 
+            <li> 
+                Have you used this type of printer before? If so, how frequently?
+            </li>
+
+            <li>
+                What task were you trying to complete when you approached the printer 
+                (print, scan, etc)? Were you able to accomplish the task/goal?
+            </li>
+
+            <li>
+                Did you encounter any issues while using the printer? If so, 
+                how did you troubleshoot? Were there any features or instructions that 
+                guided you towards the solution?
+            </li>
+            <li> 
+                How did you feel about the layout of the screen and buttons? Were 
+                they easy to find and understand?
+            </li>
+
+            <li> 
+                Did you find the options and settings intuitive or did you have 
+                difficulty navigating finding the functionality/feature you wanted?
+            </li>
+
+            <li>
+                Is there anything you wish was different about the printer's interface or a feature you wish it had?
+            </li>
+        </ul>
+
+        <p class="font-semibold text-xl pt-16 pb-8"> Interview Results </p>
+        
+        <p class="text-lg text-left pb-8"> 
+            I interviewed 3 users after closely observing them interact with 
+            the printer interface. The users were all students. Below are notes of 
+            my observations as well as a summary of the user responses.
+        </p>
+
+
+        <div class="text-lg font-bold text-left pb-8 ">Users Interviewed:</div>
+
+        <ul class="text-lg pl-3 list-[upper-roman] list-inside text-left space-y-4">
+            <li>
+                User A: 
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        First time using this printer interface and also first time
+                        trying to make a copy/scan a document. Was able to accomplish goal.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                User B: 
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        Needed to print a document. Has used the printers at Brown
+                        before; semi-familar with the interface. Was able to accomplish goal.
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                User C: 
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        Needed to print documents. Has used printer before but
+                        not at Brown. Was able to accommplish goal.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="text-lg font-bold text-left pb-8 pt-8">Responses</div>
+        <ul class="text-lg pl-3 list-[upper-roman] list-inside space-y-8">
+            <li>
+                User A and B did not intitially know where to swipe their 
+                card as directed.
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        Although the directions said to "swipe", 
+                        User A and B interpreted the symbol of the hand on display to mean 
+                        tap your card. 
+                    </li>
+                    <li>
+                        User B had difficulty finding where to swipe since the place 
+                        to swipe was on the printer itself and not on the display
+                        where their attention was. 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                User A was searching how to make a copy but did not see it as an option.
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        User A ended up clicking scan assuming there would be an option
+                        to print scan. User A did not see that as an option 
+                        but went forward with the process. User A ended up scanning the document, emailing it, 
+                        then printing the pdf from the email. 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                User A did not know where to put her document in the printer. 
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        User A placed her document on the wrong side to scan
+                        and ended up with a blank paper emailed to them. Wished there
+                        were directions displayed on what side to place 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                User C expressed confusion about where the home button navigated to.
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        User C thought home would return her back to the screen where
+                        you can choose between print, device functions, and scan
+                        but instead it logged them out and the user saw an unfamilar page with
+                        what appeared to be settings. User C just logged back in 
+                        and started the process all over again. 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                User C expressed confusion about where the home button navigated to.
+                <ul class="list-disc pl-8 pt-4">
+                    <li>
+                        User C thought home would return her back to the screen where
+                        you can choose between print, device functions, and scan
+                        but instead it logged them out and the user saw an unfamilar page with
+                        what appeared to be settings. User C just logged back in 
+                        and started the process all over again. 
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                All users appreciated the size and visibility of all the buttons
+                and overall expressed that they felt it was intuitive.
+                <ul class="list-disc pl-8 pt-4 space-y-4">
+                    <li>
+                        User C expressed it was the easiest printer she has used!
+                    </li>
+                    <li>
+                        All users appreciated the back button always available. 
+                    </li>
+
+                    <li>
+                        User B liked how as soon as they swiped their card, they were 
+                        very quickly and easily able to view + access their pending 
+                        print jobs.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </section>
+
+        <!-- {/* Interview Questions + summary*/} -->
+        <section id="Personas" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+
+        <h1 class="text-3xl pb-8 text-center font-semibold"> Personas </h1>
+
+        <p class="text-lg pb-12 text-justify"> 
+            Using my observations and the responses from the interviews, I created 
+            two personas by creating an empathy map. For each archtypcal character, 
+            I described what they might think, feel, say, and do. 
+        </p>
+
+        <div class="flex flex-col space-y-4 text-lg">
+            <p class="font-bold">Meet Persona 1: Rebecca</p>
+            <p>
+                Rebecca is a first-year student who is trying to print her practice exam.
+                She managed to queue her PDF to print and is now going to use the printer
+                at the Rock for the first time. She has in the past struggled to use other
+                printers.
+            </p>
+            <img src="./assets/Rebecca.png" alt="rebecca empathy map" width="600" height="600" class="object-cover" />
+
+            <p> Most of the users I observed were there to print something that they had already
+                put on queue on their Myprint account. Some users were in/out quickly while others
+                did take longer and seeminly read the screen for a long time before 
+                the printer started printing. Rebecca represents one of the many people 
+                who are nervous to print because they are worried they don't know how. 
+            </p>
+        </div>
+
+        <!-- {/* Persona 2 */} -->
+        <div class="flex flex-col space-y-4 pt-12 text-lg">
+            <p class="font-bold">Meet Persona 2: Raven</p>
+            <p>
+                Raven is a 3rd-year at Brown and wants to make a physical copy of her
+                notes to give to her friend. Her notes are very colorful, so it is
+                important to her that the printed version reflects that. She has class in
+                10 minutes but is confident she will be out quickly because she frequently
+                makes copies at home, and it is super quick. It is her first time trying
+                to make a copy with a Brown printer, however.
+            </p>
+            <img src="./assets/raven.png" alt="raven empathy map" width="600" height="600" class="object-cover" />
+
+            <p> Raven represents a user who does know how to use a printer well and 
+                is confident in their abilities. Even if one knows how to navigate
+                a printer however, navigating a printer =/ navigating Brown's printer 
+                interface and thus, unfamilarities may still arise.
+            </p>
+        </div>
+        </section>
+
+        <!-- {/* Interview Questions + summary*/} -->
+        <section id="Storyboard" class="flex flex-col w-full max-w-2xl px-8 mx-auto pt-24 text-darkBrown text-justify">
+
+        <h1 class="text-3xl pb-8 text-center font-semibold"> Storyboard </h1>
+
+        <p class="text-lg pb-12 text-justify"> 
+            To further illustrate the needs of the users, I created a storyboard 
+            for one of the personas I created: Raven. The storyboard is meant to 
+            show Raven's user story from start to end emphasizing her goal.
+        </p>
+
+        <img src="./assets/raven-storyboard.png" alt="raven storyboard" width="800" height="800" class="object-cover" />
+
+        </section>
+</body>

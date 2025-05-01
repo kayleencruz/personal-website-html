@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleen Cruz Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  pinkForBg: "#FEF4F3",
+                  darkBrown: "#4B1D1D",
+                  lighterBrown: '#4B1D1DCC',
+                  pinkBrown: "#D6B3B1",
+                  darkerPinkBrown: "#A87C79",
+              },
+          fontFamily: {
+              serif: ['"Inria Serif"', 'serif'],
+          },
+          },
+      },
+      }
+  </script>
+
+  <!-- Google Fonts (Inria Serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Apply font via CSS variable -->
+  <style>
+      :root {
+      --font-inria-serif: 'Inria Serif', serif;
+      }
+
+      body {
+      font-family: var(--font-inria-serif);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a6122f212c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-36 ">
+    <!-- Navbar -->
+    <div class="bg-pinkForBg fixed w-full top-0 z-10">
+        <nav class="flex justify-between items-center px-8 py-8 mx-6">
+            <!-- <h1 class="text-xl">Kayleen Cruz</h1> -->
+            <a href="index.html" class="hover:text-gray-400 text-xl">Kayleen Cruz</a>
+            <div class="flex space-x-6">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#skills" class="hover:text-gray-400">Skills</a>
+            <a href="#projects" class="hover:text-gray-400">Projects</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-pinkForBg text-darkBrown px-8 pt-40">
+        <h1 class="text-5xl md:text-7xl text-center mb-8">Iterative Design</h1>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <img src="./assets/old-gms.png" alt="original website laptop and phone view" width="900" height="900" class="object-cover" />
+            <!-- <img src="./assets/gms-homepage-redesign.png" alt="Laptop view" class="w-[500px] max-w-full object-contain" /> -->
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-12 mt-6 w-full max-w-5xl text-left">
+            <div class="space-y-4 text-sm">
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Type</p>
+                <p>Self Initiated</p>
+            </div>
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Role</p>
+                <p>UX Designer, Frontend Engineer</p>
+            </div>
+            <div>
+                <p class="uppercase font-medium text-lighterBrown tracking-wide">Tools</p>
+                <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">React</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-800">FIGMA</span>
+                </div>
+            </div>
+            </div>
+        
+            <div class="flex flex-col justify-between space-y-8 max-w-md">
+            <p class="text-lg leading-relaxed">
+                Redesigning a middle school’s webpage — from identifying problems to designing and coding the final version.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://figma.com" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">FIGMA →</a>
+                <a href="https://kayleencruz.github.io/web-redesign/" target="_blank" class="px-4 py-2 bg-pinkBrown text-darkBrown rounded-md text-sm hover:bg-darkerPinkBrown hover:text-white transition font-bold">Website →</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        
+      <div class=" rounded border border-dark">
+        <img id="main_img" src="imgs/main_img.avif" >
+  
+        <h3>Overview</h3>
+        <p>
+          Over the course of several weeks, our team followed a full iterative 
+          design process to create a multi-page, multi-screen interactive prototype 
+          in figma—from initial sketches to a polished, high-fidelity solution for 
+          Paratus Health. The goal was to design a new interface from the ground up 
+          that solves a real problem for a startup.
+        </p>
+  
+        <h4>Background</h4>
+        <p><a href="https://paratushealth.com/" target="_blank" rel="noopener noreferrer">Paratus Health</a> is a startup company that is focused on boosting health care clinic efficiency 
+          with their  AI voice intake nurse that automates pre-appointment patient interviews, saving doctors time 
+          and improving clinical accuracy. As they work towards expanding the platform into AI agents for end-to-end care delivery,
+           automating the most costly and repetitive manual labor across the patient journey, we decided to create mock ups for potential 
+          user designs that focused on their main mission of efficiency and speed.  </p>
+        
+        
+      </div>
+      <div class=" rounded border border-dark">
+        <h3>Sketches</h3>
+        <p>
+          First, we created some sketches for potential screens. For each sketch, we tried to keep in line with the patient's 
+          need to fill the intake form and the doctor's desire for a streamlined intake process.
+        </p>
+        <h5>Sketch 1: Doctor Centric</h5>
+        <div id="carouselriosketch1" class="carousel slide" data-ride="carousel" style="height: 40vw">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselriosketch1" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselriosketch1" data-slide-to="1"></li>
+            <li data-target="#carouselriosketch1" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch1/slideshow_1.png" alt="First slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>Here, the doctor would be able to edit the prompts given to the AI, allowing them to fine tune exactly what information they want to get from their patient.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch1/slideshow_2.png" alt="Second slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>This screen allows the doctor to see all of their patients, as well as filter or sort them for efficiency.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch1/slideshow_3.png" alt="Third slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p >
+                  This screen would be visible once the doctor clicked on a specific patient card. They would be able to see some relevant patient info on the left, 
+                  as well as the patient intake form filled out by the AI intake nurse.
+                  </p>
+              </div>
+            </div>
+            
+          <a class="carousel-control-prev" href="#carouselriosketch1" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselriosketch1" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <p>
+        In our wireframe, we kept the Doctor View and it remained almost entirely the same. Because of its filtering, it allows for fast lookup and efficiency, which is one of our primary goals.
+        The AI Tweaking screen was kept and itself tweaked, while the Patient View was discarded as it relied on an outdated patient intake pdf form.
+      </p>
+      <hr>
+        <h5>Sketch 2: Patient Centric</h5>
+        <div id="carouselriosketch2" class="carousel slide" data-ride="carousel" style="height: 40vw">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselriosketch2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselriosketch2" data-slide-to="1"></li>
+            <li data-target="#carouselriosketch2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch2/slideshow_1.png" alt="First slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>This is the initial screen the patient would see, giving them the option to create a new intake form or see past forms</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch2/slideshow_2.png" alt="Second slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>If the patient chooses to create a new intake form, they will be able to open a new chat with the AI intake nurse. They'll be able to hear the nurse as well as read its transcribed words. The user can then speak back or type a response. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-rio-sketch2/slideshow_3.png" alt="Third slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p >
+                  If the patient chooses to see past intake forms, they will be able to see them all starting from the most recent.
+                  </p>
+              </div>
+            </div>
+            
+          <a class="carousel-control-prev" href="#carouselriosketch2" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselriosketch2" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <p>
+        In our wireframe, the Home Page and Intake Form History screens were discarded. However, the Intake Screen was kept, particularly the text input feature as it supports accessibility.
+      </p>
+      <h5>Sketch 3: Doctor Centric (2)</h5>
+      <div id="carouselriosketch3" class="carousel slide" data-ride="carousel" style="height: 40vw">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselriosketch3" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselriosketch3" data-slide-to="1"></li>
+            <li data-target="#carouselriosketch3" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch3/slideshow_1.png" alt="First slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>This is the another design of an initial sign-in screen that the doctor would see to ensure their identity.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch3/slideshow_2.png" alt="Second slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>This would be the default screen the doctor would see once they log in, with a list of their patients. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch3/slideshow_3.png" alt="Third slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p >
+                  This screen would allow the doctor to see a patient's information, as well as their intake form.
+                  </p>
+              </div>
+            </div>
+            
+          <a class="carousel-control-prev" href="#carouselriosketch3" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselriosketch3" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <p>
+        In this iteration of our wireframe sketch, we took into account the security of the product,
+        and added a sign-in screen to ensure the doctor's identity. In later iterations of the wireframe, we kept the list of patients but changed the view to be a grid view as it is more personable and easier to scan.
+      </p>
+       <h5>Sketch 4: Patient Centric (2)</h5>
+      <div id="carouselriosketch4" class="carousel slide" data-ride="carousel" style="height: 40vw">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselriosketch4" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselriosketch4" data-slide-to="1"></li>
+            <li data-target="#carouselriosketch4" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch4/slideshow_1.png" alt="First slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>Another design of an initial sign-in screen, this time being a more realistic design with input boxes.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch4/slideshow_2.png" alt="Second slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p>This would be the default screen for a new patient doing the intake form. Taking inspiration from common chatbots, we added a chat interface to simulate a conversation with the AI intake nurse. The main difference is the main action button being a microphone icon, as we wanted to simulate a more natural conversation.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imgs/slideshow-jacob-sketch4/slideshow_3.png" alt="Third slide" style="height: 40vw; object-fit: contain;">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                <!-- <h5>Caption Title</h5> -->
+                <p >
+                  This screen would allow the patient to see the instant results of their intake form, adding the ability to flag any issues they may have as to consolidate any concerns with the accuracy of the AI. These flags would be visible to the doctor, who could then review them and make any necessary adjustments or follow up questions.
+                  </p>
+              </div>
+            </div>
+            
+          <a class="carousel-control-prev" href="#carouselriosketch4" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselriosketch4" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <p>
+        In this iteration of our wireframe sketch for the patient, we added a new screen that allows the patient to see the instant results of their intake form, adding the ability to flag any issues.
+      </p>
+  
+  
+      <hr>
+      <h5>Sketch 5: Patient + Doctor Centric</h5>
+      <div id="carouselkayleensketch" class="carousel slide" data-ride="carousel" style="height: 40vw">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselkayleensketch" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselkayleensketch" data-slide-to="1"></li>
+          <li data-target="#carouselkayleensketch" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" >
+          <div class="carousel-item active"> 
+            <img class="d-block w-100" src="imgs/slideshow-kayleen-sketch/kayleen-partatus-sketch1.jpg" alt="First slide" style="height: 40vw; object-fit: contain;">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+              <!-- <h5>Caption Title</h5> -->
+              <p> Screen where the patient can view their past intake forms. All sections are generated
+                by the AI.   </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imgs/slideshow-kayleen-sketch/kayleen-paratus-sketch2.jpg" alt="Third slide" style="height: 40vw; object-fit: contain;">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+              <!-- <h5>Caption Title</h5> -->
+              <p >
+                Sticky profile with scroll for right side to see primary concern, symptoms, potential diagnosis, 
+                and prescribed. Dropdown to change intake form being viewed. 
+                </p>
+            </div>
+          </div>
+          
+        <a class="carousel-control-prev" href="#carouselkayleensketch" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.2);">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselkayleensketch" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.2);">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <p>
+      This screen's UI and section titles were modified in the wireframe and hifi prototype 
+      while mantaining the same general layout to patients and doctors to view past intake forms.
+    </p>
+  
+      </div>
+  
+      <div class=" rounded border border-dark">
+        <h3>Wireframe</h3>
+        <a href="https://balsamiq.cloud/svefwlc/pw5yad4/r048A" target="_blank" rel="noopener noreferrer"><img id="main_img" src="imgs/wireframe.png"></a>
+        <p>
+          With those sketches in mind, we created our <a href="https://balsamiq.cloud/svefwlc/pw5yad4/r048A" target="_blank" rel="noopener noreferrer">wireframe</a>
+        </p>
+        
+        <p>
+          For our final design, we leaned toward simpler designs, while still staying as accssible as possible. For example, we 
+          decided not to keep the exact nurse intake form pdf, rather preferring the information be presented in a more modular way. Another example of this is getting rid of the success message in the result of the intake form, as we felt that the screen itself was enough to indicate that the form was completed. However, the lack of a success message was brought up later by a user during a usability test
+        </p>
+        
+  <hr>
+        <h5>Loom Demo</h5>
+        <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/ea383d25f853427f877482bde769b37a?sid=c3fe5334-9f5b-4662-b4fe-46d11789052e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>      
+      </div>
+  
+  
+      <div class=" rounded border border-dark">
+        
+        <h3>Wireframe Critique</h3>
+  
+        <p>
+          Before moving onto the final mockup, we received valuable feedback on our design. 
+          This critique helped us identify both strengths and areas for improvement.
+        </p>
+        <p>
+          <b>Positive Comments:</b>
+          <ul>
+            <li>Good that design considers all interactions.</li>
+            <li>Patient Info View Screen: Nice with sidebar displaying patient info</li>
+            <li>Patient View Intake: Use of icons was a nice touch. </li>
+            <li>Voice is deafult in active intake form screen to emulate interaction with a real nurse, as the product does.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Suggestions for Improvement:</b>
+          <ul>
+            <li>Navigation Bar: Make it appear more clickable by adding underline or hover effects, and increasing spacing.</li>
+            <li>Layout: On a patient's past intake form screen, the left side (patient info) is bare after scrolling, consider making it sticky. 
+            <li>AI Questions: Rename for clarity, allow customization and editing.</li>
+            <li>Add a button to replay voice instructions.</li>
+            <li>Clarify what happens when an item is flagged in confirm intake form screen, consider using a popup or editable area.</li>
+          </ul>
+        </p>
+  
+        <p>
+          We chose to incorporate all of the suggestions from the critique. Each point addressed a point we had not previously considered—whether an aesthetic enhancement or an accessibility improvement. These refinements helped strengthen the usability and clarity of our interface.
+        </p>
+      </div>
+  
+      <div class=" rounded border border-dark">
+        <h3>Hi-Fi Prototype</h3>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://embed.figma.com/proto/G7Jg84HHFc2tO865i0Ctzi/HW-5---Paratus-Health-Mockups?page-id=7%3A2&node-id=84-240&viewport=-902%2C936%2C0.3&scaling=contain&content-scaling=fixed&starting-point-node-id=84%3A240&embed-host=share" allowfullscreen></iframe>
+  
+        <p>
+          Using Figma, we created a 
+          <a href="https://www.figma.com/design/G7Jg84HHFc2tO865i0Ctzi/HW-5---Paratus-Health-Mockups?node-id=84-240&t=rj7I6frJj2CGNRQB-1"  target="_blank" rel="noopener noreferrer">
+            high fidelity prototype</a>.
+           
+        </p>
+  
+  
+        <p>
+          <b>Efficiency </b>
+          <ul>
+            <li>
+              The voice chat interface allows for a more natural option for patients to fill out the intake form, making it more accessible and efficient.
+            </li>
+  
+            <li>
+              The patient's past intake forms screen sticky "profile" with a patient's general personal information and medical history
+              is easily visible and navigable for the doctor and seperate from visit specific 
+              information. 
+            </li>
+  
+            <li>The Doctor View Patients screen allows medical professionals to view and find all of their patients very quickly, with both a sort and a filter option. </li>
+  
+          </ul>
+          <b>Learnability </b>
+          <ul>
+            <li>
+              The AI chat interface is very common and intuitive, making it easy for users to understand how to use it.
+            </li>
+            <li>
+              Usually there are privacy and HIPPA forms to sign, insurance agreement to pay
+            </li>
+            <li>The Doctor View Patients screen card format for each patient is very common across different websites, as well as having the look and feel of physical playing cards which makes it easy for users to learn. </li>
+          </ul>
+          <b>Memorability</b>
+          <ul>
+            <li>
+              Efficient way to collect information, usual intake forms are unclear, overwhelming and unorganized
+            </li>
+  
+            <li>Due to the simple and intuitive nature of the screens, it’s easy to remember what each screen does.</li>
+            
+          </ul>
+        </p>
+        <hr>
+        <h5>Loom Demo</h5>
+        <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/0a20942acdb848d7bb2c1fc62749d37a?sid=9557a6c7-e23e-4c82-a777-7c925c489343" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        
+      </div>
+  
+      <div class=" rounded border border-dark">
+        <h3>User Testing</h3>
+        <p>
+          In order to get a better idea of how our mockup performed, we performed a number of user tests. The task we had them undertake was creating a new intake form as if they were at a doctor's appointment. The subtasks for this usability test are as follows:
+          <ol>
+            <li>
+              Log into Paratus Health application using the Login Screen
+            </li>
+            <li>
+              Interact with the AI in the Intake Screen
+            </li>
+            <li>
+              Confirm their information is correct in the Confirm Intake Form Screen
+            </li>
+            <li>
+              Look over their info in the Patient Screen
+            </li>
+          </ol>
+          We believed the users would perform fairly well on these tasks.
+        </p>
+        <hr>
+        <h5>User 1</h5>
+        <p>
+          Intake screen: 
+          <ul>
+            <li>
+              Likes that you can type or speak or listen, thinking if filling out form at work, doesn't want others to hear personal medical information
+            </li>
+            <li>
+              Hearing AI say stuff is good, thought it would be helpful for people with low vision
+            </li>
+          </ul>
+          Confirm Intake Form:
+          <ul>
+            <li>
+              Liked that its clear, primary concerns, symptoms, easy to follow
+            </li>
+            <li>
+              Didn't know why color coded, tried to click and edit because of appearance
+            </li>
+          </ul>
+          Final Thoughts:
+          <ul>
+            <li>
+              Efficient way to collect information, usual intake forms are unclear, overwhelming and unorganized
+            </li>
+            <li>
+              Usually there are privacy and HIPPA forms to sign, insurance agreement to pay
+            </li>
+          </ul>
+  
+          Overall, this user liked that the interface was very simple and took away a lot of the bulk that comes 
+          with filling out an intake form by isolating it to one "conversation" with an AI. They were confused by the 
+          colors and icons in the Patient Intake Form and also suggested to have areas for giving consent about privacy 
+          or agreeing to copay.
+  
+        </p>
+        <hr>
+        <h5>User 2</h5>
+        <p>
+          Intake screen: 
+          <ul>
+            <li>
+                Appreciated the option to type or speak, especially if they are trying to type more discreetly in shared spaces (e.g., clinic waiting rooms, coffee shops).
+            </li>
+            <li>
+              Thought that it would be better if the AI voice and the keyboard option were equally default options for the patient to choose from in the beginning and not just the AI voice to start off.
+            </li>
+          </ul>
+          Confirm Intake Form:
+          <ul>
+            <li>
+              Initially confused by the form and would have liked a transition screen like a "All Done! ~ Generating Report" Screen
+            </li>
+            <li>
+              Would have liked to see the 'Patient Details' section be a regular section in the list as they thought it took away from the flow of the form.
+            </li>
+          </ul>
+          Final Thoughts:
+          <ul>
+            <li>
+              Wanted more microinteractions to indicate the form was complete and to indicate that the report was being generated.
+            </li>
+            <li>
+              Would have liked to see each section of the form to be a little wider as to see more of the form at once, making the form more readable, but they understand that this may be a limitation of the design which was more for doctors to use.
+            </li>
+          </ul>
+  
+          Overall, this user liked the design and thought it looked official and clean. They thought the form was easy sufficiently easy to read and the options to type or speak was a good touch. But they did hope for an easier flow between the Intake Screen and the Confirm Intake Form Screen.
+        </p>
+        <hr>
+        <h5>User 3</h5>
+        <p>
+          Intake screen: 
+          <ul>
+            <li>
+              Initially confused on where sign in navigated to. Did not realize the page
+              was to start a new intake form until they clicked the "new intake form"
+              on the navbar which navigated to that page.
+            </li>
+            <li>
+              Liked the option to type but was confused on where the button navigated to.
+            </li>
+  
+          </ul>
+          Confirm Intake Form:
+          <ul>
+            <li>
+              Liked how the information was not displayed in big paragraphs. 
+            </li>
+            <li>
+              Confused on where the categories in the page came from. 
+            </li>
+          </ul>
+  
+        </ul>
+  
+  
+  
+          Final Thoughts:
+          <ul>
+            <li>
+              Navigation a bit unintuitive. 
+            </li>
+            <li>
+              It is unclear "Confirm Intake Form" using AI to organize the chat
+              into set categories.
+            </li>
+  
+            <li>
+              Thought "confirm intake form" and the form on the patients past forms should 
+              be organized similarly to make it easier for users to follow and 
+              remember where to find their information. 
+            </li>
+          </ul>
+  
+          Overall, this user liked the simplicity of the nurse intake form appreciating 
+          the option to type. However, the user suggested having some type of 
+          message or text indicating that page is to create a new form. The user also
+          questioned if the navigation should be to this page after signing in. 
+        </p>
+        <hr>
+        
+        <b> User Testing Summary</b>
+        <p>
+          Users made most errors in the Confirm Intake screen, confused about how to edit information.
+          Some things we could add in the future are areas where the patient must sign for the doctor to obtain consent, as well as 
+          changing the editing of intake information to be isolated to the one part that is incorrect. 
+        </p>
+        <p>
+          Users also noted
+          inconsistencies with the confirm intake form and past intake forms screens which we would want to fix. 
+          As for the patient intake form screen, we would 
+          add a success message to indicate that the form was complete, as we had previously thought the 
+          AI would do this, but it would be better to also include a more explicit confirmation. We 
+          could also add a "get started" message or instructions on how the AI chat works after signing in.
+        </p>
+  
+      </div>
+  
+      
+      <div class=" rounded border border-dark">
+        <h3>Final Thoughts</h3>
+        <b>Mission</b>
+        <p>
+          In this project, we endeavored to create a website that users of 
+          Paratus Health’s AI intake nurse could use to either create or view intake forms. 
+          We began with sketches, some staying closer to the traditional intake form interface 
+          while others modularized it more. We decided on a more simple interface, one where 
+          each section and item of information was clearly differentiated.
+        </p>
+  
+        <b>Iterative Proceess</b>
+        <p>
+          The final design consisted of a Doctor View section and Patient View section, 
+          each fine tuned for efficiency and accuracy. Users liked that the interface 
+          simplified the intake form process as well as the options for both accessibility and 
+          privacy. However, they were sometimes confused by the navigation and some suggested
+           some “in between” screens.
+        </p>
+  
+        <b>Next Steps</b>
+        <p>
+          In the future, we could add more intermediary transition screens as well 
+          as areas where medical professionals could obtain consent or agreement 
+          to pay whatever was not covered by insurance. Through this iterative process, 
+          we were able to find areas of improvement in our initial sketches and wireframe, and 
+          use that feedback to create the interface you saw today.
+        </p>
+      </div>
+      
+      
+      <div class=" rounded border border-dark">
+        
+        <footer>
+          <div class="row">
+            <div class="col-lg-12">
+              <p style="text-align: center;">Thanks for reading!</p>
+            </div>
+          </div>
+        </footer>
+        
+      </div><!-- /. -->
+  
+      <!-- JavaScript -->
+      <script src="../js/jquery-1.10.2.js"></script>
+      <script type="text/javascript">
+        var dt = new Date();
+        document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
+      </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
