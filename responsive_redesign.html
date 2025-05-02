@@ -53,13 +53,13 @@
 
 
     <nav id="sideNav" class="hidden lg:block fixed top-1/2 transform -translate-y-1/2 z-10 py-4 px-8 uppercase space-y-4 text-md tracking-wide">
-        <a href="index.html" data-target="index" class="block nav-link text-gray-400 hover:text-pinkBrown pb-4">← Home</a>
-        <a href="#home" data-target="home" class="block nav-link text-gray-400 hover:text-pinkBrown">Overview</a>
-        <a href="#about" data-target="about" class="block nav-link text-gray-400 hover:text-pinkBrown">About</a>
-        <a href="#problems" data-target="problems" class="block nav-link text-gray-400 hover:text-pinkBrown">Problems</a>
-        <a href="#redesign" data-target="redesign" class="block nav-link text-gray-400 hover:text-pinkBrown">Redesign</a>
-        <a href="#coding" data-target="coding" class="block nav-link text-gray-400 hover:text-pinkBrown">Coding</a>
-        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-400 hover:text-pinkBrown">Takeaways</a>
+        <a href="index.html" data-target="index" class="block nav-link text-gray-500 hover:text-pinkBrown pb-4">← Home</a>
+        <a href="#home" data-target="home" class="block nav-link text-gray-500 hover:text-pinkBrown">Overview</a>
+        <a href="#about" data-target="about" class="block nav-link text-gray-500 hover:text-pinkBrown">About</a>
+        <a href="#problems" data-target="problems" class="block nav-link text-gray-500 hover:text-pinkBrown">Problems</a>
+        <a href="#redesign" data-target="redesign" class="block nav-link text-gray-500 hover:text-pinkBrown">Redesign</a>
+        <a href="#coding" data-target="coding" class="block nav-link text-gray-500 hover:text-pinkBrown">Coding</a>
+        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-500 hover:text-pinkBrown">Takeaways</a>
       </nav>
       
     
@@ -415,10 +415,10 @@
       
           navLinks.forEach((link) => {
             link.classList.remove("text-lighterBrown", "font-semibold");
-            link.classList.add("text-gray-400"); // restore gray for non-active
+            link.classList.add("text-gray-500"); // restore gray for non-active
       
             if (link.dataset.target === current) {
-              link.classList.remove("text-gray-400");
+              link.classList.remove("text-gray-500");
               link.classList.add("text-lighterBrown", "font-semibold");
             }
           });

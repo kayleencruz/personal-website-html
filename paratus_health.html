@@ -50,14 +50,14 @@
 <body class="bg-pinkForBg scroll-smooth text-darkBrown font-serif pb-64 ">
     <!-- Navbar -->
     <nav id="sideNav" class="hidden lg:block fixed top-1/2 transform -translate-y-1/2 z-10 py-4 px-8 uppercase space-y-4 text-md tracking-wide">
-        <a href="index.html" data-target="index" class="block nav-link text-gray-400 hover:text-pinkBrown pb-4">← Home</a>
-        <a href="#home" data-target="home" class="block nav-link text-gray-400 hover:text-pinkBrown">Overview</a>
-        <a href="#background" data-target="background" class="block nav-link text-gray-400 hover:text-pinkBrown">Background</a>
-        <a href="#sketches" data-target="sketches" class="block nav-link text-gray-400 hover:text-pinkBrown">Sketches</a>
-        <a href="#wireframe" data-target="wireframe" class="block nav-link text-gray-400 hover:text-pinkBrown">Wireframe</a>
-        <a href="#hifi-prototype" data-target="hifi-prototype" class="block nav-link text-gray-400 hover:text-pinkBrown">HiFi Prototype</a>
-        <a href="#testing" data-target="testing" class="block nav-link text-gray-400 hover:text-pinkBrown">Testing</a>
-        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-400 hover:text-pinkBrown">Takeaways</a>
+        <a href="index.html" data-target="index" class="block nav-link text-gray-500 hover:text-pinkBrown pb-4">← Home</a>
+        <a href="#home" data-target="home" class="block nav-link text-gray-500 hover:text-pinkBrown">Overview</a>
+        <a href="#background" data-target="background" class="block nav-link text-gray-500 hover:text-pinkBrown">Background</a>
+        <a href="#sketches" data-target="sketches" class="block nav-link text-gray-500 hover:text-pinkBrown">Sketches</a>
+        <a href="#wireframe" data-target="wireframe" class="block nav-link text-gray-500 hover:text-pinkBrown">Wireframe</a>
+        <a href="#hifi-prototype" data-target="hifi-prototype" class="block nav-link text-gray-500 hover:text-pinkBrown">HiFi Prototype</a>
+        <a href="#testing" data-target="testing" class="block nav-link text-gray-500 hover:text-pinkBrown">Testing</a>
+        <a href="#takeaways" data-target="takeaways" class="block nav-link text-gray-500 hover:text-pinkBrown">Takeaways</a>
       </nav>
 
       <!-- Home -->
@@ -676,10 +676,10 @@
       
           navLinks.forEach((link) => {
             link.classList.remove("text-lighterBrown", "font-semibold");
-            link.classList.add("text-gray-400"); // restore gray for non-active
+            link.classList.add("text-gray-500"); // restore gray for non-active
       
             if (link.dataset.target === current) {
-              link.classList.remove("text-gray-400");
+              link.classList.remove("text-gray-500");
               link.classList.add("text-lighterBrown", "font-semibold");
             }
           });
